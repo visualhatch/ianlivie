@@ -42,3 +42,7 @@ code {
   color: red !important;
 }
 
+/*MAIN CONTAINER*/
+.mainContainer {
+  margin-top: 100px !important;
+}

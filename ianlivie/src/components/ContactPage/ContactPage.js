@@ -1,25 +1,16 @@
-import React, { PureComponent } from 'react'
-import { Button, Segment, Divider, Container } from 'semantic-ui-react'
+import React, { Fragment } from "react";
+import Nav from "../NavBar/NavBar";
+import { Container } from "semantic-ui-react";
 
-class ContactPage extends PureComponent {
-    constructor(props) {
-        super(props)
+const ContactPage = () => {
+  return (
+    <Fragment>
+      <Nav />
+      <Container className={"mainContainer"}>
+        <h1>CONTACT PAGE</h1>
+      </Container>
+    </Fragment>
+  );
+};
 
-        this.state = {
-            
-        }
-    }
-
-    render() {
-        return (
-        <Container textAlign={'center'}>
-<Button className="ui button testButton" >Click Here</Button>
-        </Container>
-
-            
-
-        )
-    }
-}
-
-export default ContactPage
+export default ContactPage;

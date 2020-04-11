@@ -26,6 +26,7 @@ const NavBar = () => {
                         <MenuItem as={NavLink} exact to={"/"} name={"Home"} className={"item"}/>
                         <MenuItem as={NavLink} exact to={"/about"} name={"About Us"} className={"item"}/>
                         <MenuItem as={NavLink} exact to={"/what-we-do"} name={"What We Do"} className={"item"}/>
+                        <MenuItem as={NavLink} exact to={"/contact"} name={"Contact"} className={"item"}/>
                     </MenuMenu>
 
                 </Container>
