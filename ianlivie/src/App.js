@@ -1,12 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Nav from './components/Nav/Nav';
+import React from "react";
+
+import "./App.css";
 
 function App() {
-  return (
-    <Nav/>
-  );
+  return <div>TEST</div>;
 }
 
 export default App;
