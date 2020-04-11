@@ -4,7 +4,7 @@ import Nav from "../NavBar/NavBar"
 const HomePage = () => {
     return (
         <div>
-            <Nav/>
+            <img src={'https://via.placeholder.com/400x200'}/>
         </div>
     );
 };
