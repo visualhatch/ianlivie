@@ -1,36 +1,45 @@
 import React, { Fragment } from "react";
 
-import { NavLink } from "react-router-dom";
+
+import { NavLink as RRNavLink } from "react-router-dom";
+import { Nav, Navbar } from "react-bootstrap";
 
 const NavBar = () => {
   return (
     <Fragment>
-      {/*<Menu fixed={"top"}>*/}
-      {/*  <Container>*/}
-      {/*    /!*<MenuItem*!/*/}
-      {/*    /!*    as={NavLink}*!/*/}
-      {/*    /!*    exact*!/*/}
-      {/*    /!*    to={"/"}*!/*/}
-      {/*    /!*    header*!/*/}
-      {/*    /!*    className={'navLogoItem'}*!/*/}
-      {/*    /!*>*!/*/}
-      {/*    /!*    <img*!/*/}
-      {/*    /!*        src="/assets/logo/logo_white.jpg"*!/*/}
-      {/*    /!*        alt="logo"*!/*/}
-      {/*    /!*        className={"navLogo"}*!/*/}
-      {/*    /!*    />*!/*/}
-      {/*    /!*</MenuItem>*!/*/}
+      <Navbar expand="lg" sticky={'top'}>
+        <Navbar.Brand href="/">
+          <img
+            src="/assets/logo/logo_white.jpg"
+            width="150"
+            className="d-inline-block align-top"
+            alt="Ian Livie logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"><i className="fas fa-bars navTogglerIcon"></i></Navbar.Toggle>
 
-      {/*    /!*<MenuMenu position={'right'}>*!/*/}
-      {/*    /!*    <MenuItem as={NavLink} exact to={"/"} name={"Home"} className={"item"}/>*!/*/}
-      {/*    /!*    <MenuItem as={NavLink} exact to={"/about"} name={"About Us"} className={"item"}/>*!/*/}
-      {/*    /!*    <MenuItem as={NavLink} exact to={"/what-we-do"} name={"What We Do"} className={"item"}/>*!/*/}
-      {/*    /!*    <MenuItem as={NavLink} exact to={"/contact"} name={"Contact"} className={"item"}/>*!/*/}
-      {/*    /!*</MenuMenu>*!/*/}
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link as={RRNavLink} exact to={"/"} activeClassName={"active"}>
+              Home
+            </Nav.Link>
 
-      {/*  </Container>*/}
-      {/*</Menu>*/}
+            <Nav.Link
+              as={RRNavLink}
+              exact
+              to={"/about"}
+              activeClassName={"active"}
+            >
+              About
+            </Nav.Link>
 
+            <Nav.Link as={RRNavLink} exact to={"/news"} activeClassName={"active"}>News</Nav.Link>
+            <Nav.Link as={RRNavLink} exact to={"/equipment-rental"} activeClassName={"active"}>Equipment Rental</Nav.Link>
+            <Nav.Link as={RRNavLink} exact to={"/markets"} activeClassName={"active"}>Markets</Nav.Link>
+            <Nav.Link as={RRNavLink} exact to={"/contact-us"} activeClassName={"active"}>Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </Fragment>
   );
 };

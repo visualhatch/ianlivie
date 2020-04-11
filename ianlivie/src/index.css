@@ -12,4 +12,27 @@ code {
     monospace;
 }
 
+/*MAIN CONTAINER STYLE*/
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 /*NAV STYLES*/
+.navTogglerIcon {
+  color: red;
+}
+
+.navbar-toggler {
+  border-color: black !important;
+}
+
+.active {
+  color: red !important;
+}
+
+.nav-link:hover {
+  color: red !important;
+}
+
+/*HOME STYLES*/
