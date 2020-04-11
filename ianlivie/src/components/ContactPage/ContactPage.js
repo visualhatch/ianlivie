@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Button, Segment, Divider, Container } from 'semantic-ui-react'
 
 class ContactPage extends PureComponent {
     constructor(props) {
@@ -11,7 +12,12 @@ class ContactPage extends PureComponent {
 
     render() {
         return (
-            <div className={'div'}>GET WEBSOTRM</div>
+        <Container textAlign={'center'}>
+<Button className="ui button testButton" >Click Here</Button>
+        </Container>
+
+            
+
         )
     }
 }

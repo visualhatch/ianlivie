@@ -13,4 +13,14 @@ code {
     monospace;
 }
 
+/* BUTTON STYLES */
+.ui.button {
+  font-size: 2rem !important;
+}
+
 /* HOME CSS */
+.testButton {
+  background-color: green !important;
+}
+
+/* ABOUT PAGE */
