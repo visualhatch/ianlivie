@@ -13,36 +13,3 @@ code {
 }
 
 /*NAV STYLES*/
-.ui.menu {
-  box-shadow: none !important;
-  border: none;
-}
-
-.ui.menu .item:before {
-  background: none;
-}
-.navLogoItem {
-  padding: 8px !important;
-  border-left: none !important;
-}
-.navLogoItem.active {
-  background-color: white !important;
-}
-.navLogo {
-  width: 140px !important;
-}
-
-.ui.menu .active.item {
-  background: none;
-  color: red !important;
-}
-
-.ui.menu .item:hover {
-  background: none !important;
-  color: red !important;
-}
-
-/*MAIN CONTAINER*/
-.mainContainer {
-  margin-top: 100px !important;
-}

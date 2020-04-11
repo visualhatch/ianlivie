@@ -1,15 +1,10 @@
-import React, {Fragment} from 'react';
-import Nav from "../NavBar/NavBar";
-import {Container} from "semantic-ui-react";
+import React from 'react';
 
 const AboutPage = () => {
     return (
-        <Fragment>
-            <Nav/>
-            <Container className={'mainContainer'}>
-                <h1>ABOUT PAGE</h1>
-            </Container>
-        </Fragment>
+        <div>
+            ABOUT PAGE
+        </div>
     );
 };
 
