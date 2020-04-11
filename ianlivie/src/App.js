@@ -1,9 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Container } from "semantic-ui-react";
+import { Route, Switch, withRouter } from "react-router-dom";
 
-import "./App.css";
+const App = () => {
+  return (
+    <Fragment>
+      <Route exact path={"/"} component={HomePage2} />
+    </Fragment>
+  );
+};
 
-function App() {
-  return <div>TEST</div>;
-}
-
-export default App;
+export default withRouter(App);
