@@ -1,30 +1,42 @@
-import React, { PureComponent } from 'react'
-import { Menu } from 'semantic-ui-react'
+import React, {Fragment} from 'react';
+import {Container, Image, Menu, MenuItem, MenuMenu} from "semantic-ui-react";
+import { NavLink } from "react-router-dom";
 
-class NavBar extends PureComponent {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            
-        }
-    }
+const NavBar = () => {
+    return (
+        <Fragment>
+            <Menu fixed={'top'}>
+                <Container>
+                    <MenuItem
+                        as={NavLink}
+                        exact
+                        to={"/"}
+                        header
+                        className={'navLogoItem'}
+                    >
+                        <img
+                            src="/assets/logo/logo_white.jpg"
+                            alt="logo"
+                            className={"navLogo"}
+                        />
+                    </MenuItem>
 
-    render() {
-        return (
-            <Menu>
-        <Menu.Item
-          name='editorials'
-          
-          
-        >
-          Editorials
-        </Menu.Item>
+                    <MenuMenu position={'right'}>
+                        <MenuItem as={NavLink} exact to={"/"} name={"Home"} className={"item"}/>
+                        <MenuItem as={NavLink} exact to={"/about"} name={"About Us"} className={"item"}/>
+                        <MenuItem as={NavLink} exact to={"/what-we-do"} name={"What We Do"} className={"item"}/>
+                    </MenuMenu>
 
-        
-      </Menu>
-        )
-    }
-}
+                </Container>
 
-export default NavBar
+            </Menu>
+
+
+
+        </Fragment>
+
+    );
+};
+
+export default NavBar;
