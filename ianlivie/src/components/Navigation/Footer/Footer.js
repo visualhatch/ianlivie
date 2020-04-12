@@ -48,14 +48,7 @@ const Footer = () => {
                 >
                   Equipment Rental
                 </Nav.Link>
-                <Nav.Link
-                    as={RRNavLink}
-                    exact
-                    to={"/markets"}
-                    activeClassName={"active"}
-                >
-                  Markets
-                </Nav.Link>
+
                 <Nav.Link
                     as={RRNavLink}
                     exact

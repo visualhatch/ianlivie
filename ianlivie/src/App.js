@@ -12,6 +12,7 @@ import EquipmentRentalPage from "./components/EquipmentRentalPage/EquipmentRenta
 import News1Page from "./components/NewsPage/NewsArticles/News1/News1Page";
 import News2Page from "./components/NewsPage/NewsArticles/News2/News2Page";
 import News3Page from "./components/NewsPage/NewsArticles/News3/News3Page";
+import RequestQuotePage from "./components/RequestQuotePage/RequestQuotePage";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
 
       <Route exact path={"/news"} component={NewsPage} />
       <Route exact path={"/equipment-rental"} component={EquipmentRentalPage} />
+      <Route exact path={"/request-quote"} component={RequestQuotePage} />
       {/*<Route exact path={"/markets"} component={MarketsPage} />*/}
       <Route exact path={"/contact-us"} component={ContactPage} />
 

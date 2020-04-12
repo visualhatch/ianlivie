@@ -35,7 +35,6 @@ const NavBar = () => {
 
             <Nav.Link as={RRNavLink} exact to={"/news"} activeClassName={"active"}>News</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/equipment-rental"} activeClassName={"active"}>Equipment Rental</Nav.Link>
-            <Nav.Link as={RRNavLink} exact to={"/markets"} activeClassName={"active"}>Markets</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/request-quote"} activeClassName={"active"}>Request Quote</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/contact-us"} activeClassName={"active"}>Contact Us</Nav.Link>
           </Nav>
