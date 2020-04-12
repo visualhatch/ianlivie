@@ -7,6 +7,12 @@ import ContactPage from "./components/ContactPage/ContactPage"
 import {Container} from "react-bootstrap";
 import NewsPage from "./components/NewsPage/NewsPage";
 
+
+// NEWS ARTICLE IMPORTS
+import News1Page from "./components/NewsPage/NewsArticles/News1/News1Page";
+import News2Page from "./components/NewsPage/NewsArticles/News2/News2Page";
+import News3Page from "./components/NewsPage/NewsArticles/News3/News3Page";
+
 const App = () => {
   return (
     <Container fluid className={'appContainer'}>
@@ -18,6 +24,13 @@ const App = () => {
       {/*<Route exact path={"/equipment-rental"} component={EquipmentRentalPage} />*/}
       {/*<Route exact path={"/markets"} component={MarketsPage} />*/}
       <Route exact path={"/contact-us"} component={ContactPage} />
+
+
+      {/*NEWS ARTICLE ROUTES*/}
+        <Route exact path={"/news/news-article/news1"} component={News1Page} />
+        <Route exact path={"/news/news-article/news2"} component={News2Page} />
+        <Route exact path={"/news/news-article/news3"} component={News3Page} />
+
 
     </Container>
   );

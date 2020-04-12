@@ -1,0 +1,14 @@
+.newsArticleImagesRow {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.newsArticleHeaderRow {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.newsArticleButtonRow {
+    text-align: center;
+}
