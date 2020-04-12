@@ -1,6 +1,7 @@
 .headerJumbotron {
     border-radius: 0 !important;
-    background-color: black !important;
+    background-image: url("https://via.placeholder.com/1600x300.png?text=CHANGE+THIS+WITH+A+IMAGE+OF+1600+X+300");
+    background-size: 100% 100%;
     color: red !important;
     text-align: center;
 }
