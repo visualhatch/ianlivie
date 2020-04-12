@@ -7,7 +7,7 @@ import { Nav, Navbar } from "react-bootstrap";
 const NavBar = () => {
   return (
     <Fragment>
-      <Navbar expand="lg" sticky={'top'}>
+      <Navbar expand="lg">
         <Navbar.Brand href="/">
           <img
             src="/assets/logo/logo_white.jpg"
@@ -36,6 +36,7 @@ const NavBar = () => {
             <Nav.Link as={RRNavLink} exact to={"/news"} activeClassName={"active"}>News</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/equipment-rental"} activeClassName={"active"}>Equipment Rental</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/markets"} activeClassName={"active"}>Markets</Nav.Link>
+            <Nav.Link as={RRNavLink} exact to={"/request-quote"} activeClassName={"active"}>Request Quote</Nav.Link>
             <Nav.Link as={RRNavLink} exact to={"/contact-us"} activeClassName={"active"}>Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>

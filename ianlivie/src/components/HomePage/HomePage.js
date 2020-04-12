@@ -1,14 +1,19 @@
-import React, {Fragment} from 'react';
-import Nav from "../NavBar/NavBar"
-import HomeJumbotron from "./Jumbotron/HomeJumbotron";
+import React from 'react';
+import Nav from "../Navigation/NavBar/NavBar"
+import HomeJumbotron from "../Jumbotrons/HomeJumbotron/HomeJumbotron";
+import Welcome from "./Welcome/Welcome";
+import {Container} from "react-bootstrap";
+import Footer from "../Navigation/Footer/Footer";
 
 
 const HomePage = () => {
     return (
-        <Fragment>
+        <Container fluid className={'mainContainer'}>
             <Nav/>
             <HomeJumbotron/>
-        </Fragment>
+            <Welcome/>
+            <Footer/>
+        </Container>
     );
 };
 

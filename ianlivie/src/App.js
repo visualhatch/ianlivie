@@ -8,7 +8,7 @@ import {Container} from "react-bootstrap";
 
 const App = () => {
   return (
-    <Container fluid>
+    <Container fluid className={'appContainer'}>
       <Route exact path={"/"} component={HomePage} />
       <Route exact path={"/about"} component={AboutPage} />
 

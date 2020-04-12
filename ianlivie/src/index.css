@@ -13,6 +13,9 @@ code {
 }
 
 /*MAIN CONTAINER STYLE*/
+.mainContainer {
+  /*margin-top: 90px;*/
+}
 .container-fluid {
   padding-right: 0 !important;
   padding-left: 0 !important;

@@ -1,0 +1,42 @@
+.footerWrapper {
+    margin-top: 20px;
+}
+.footer {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-col {
+  text-align: center;
+}
+
+.footer-col p {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+.footer h5 {
+  color: #db3445;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  padding-top: 0.2rem !important;
+  padding-bottom: 0.2rem !important;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #db3445;
+}
+
+.footer-terms {
+  text-align: center;
+}
+
+.footer-inline {
+  display: inline-flex;
+}

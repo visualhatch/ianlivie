@@ -1,0 +1,6 @@
+.headerJumbotron {
+    border-radius: 0 !important;
+    background-color: black !important;
+    color: red !important;
+    text-align: center;
+}
